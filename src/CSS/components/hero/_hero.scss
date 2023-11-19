@@ -1,0 +1,56 @@
+//hero 
+.hero{
+    max-width: $max-1920;
+    max-height: $max-400;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $top-bottom-0-auto;
+    position: relative;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+
+    .hero-overlay{
+        position: absolute;
+        padding: $left-right-2;
+        max-width: $max-1000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        word-break:normal;
+    }
+
+    .hero-title{
+        background-color: rgba($primary-digital-white, 0.85);
+        padding: .2em .5em;
+        margin: $spacing-05 $spacing-0;
+        }
+
+    @media screen and (min-width: 768px){
+        max-height: $max-500;
+
+
+        .hero-overlay{
+            justify-content: start;
+        }
+
+        .hero-title{
+            margin: $spacing-1 $spacing-0;
+        }
+    }
+        
+    }
+
+
+
+

@@ -1,0 +1,96 @@
+.comment-form {
+  background-color: $primary-sand;
+  max-width: $max-500;
+  width: 100%;
+  padding-top: $spacing-4;
+
+  h2 {
+    margin: 1em 0.5em;
+    text-align: center;
+  }
+  p {
+    color: $primary-digital-black;
+    text-align: center;
+  }
+  .error {
+    background-color: $primary-leather;
+    color: $primary-digital-white;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: $top-bottom-05;
+    margin: $top-bottom-1-auto;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: $top-bottom-0-auto;
+
+    .form-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0.5em 0 1em 0;
+    }
+    label {
+      color: $primary-digital-black;
+      padding-bottom: 0.8em;
+    }
+
+    input,
+    textarea {
+      border: $border-forest;
+      padding: $spacing-1;
+      background-color: $primary-digital-white;
+
+      &:focus {
+        outline: $border-leather;
+      }
+    }
+
+    .smaller-input {
+      width: 50%;
+    }
+
+    .checkbox {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: flex-start;
+      align-items: center;
+      input {
+        margin: $left-right-05;
+        width: $icons-md;
+        height: $icons-md;
+        background-color: $primary-digital-white;
+        border: $border-forest;
+      }
+      label {
+        padding: $spacing-0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comment-form {
+    .comment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+      width: 100%;
+      margin: $top-bottom-0-auto;
+    }
+    form {
+      .checkbox {
+        padding-bottom: $spacing-1-5;
+        input {
+          margin: $left-right-05;
+          width: $icons-sm;
+          height: $icons-sm;
+        }
+      }
+    }
+  }
+}

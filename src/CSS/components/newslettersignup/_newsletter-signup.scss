@@ -1,0 +1,84 @@
+.newsletter-signup {
+  width: 100%;
+  margin: $top-bottom-0-auto;
+  background-color: $primary-clay;
+  padding: $top-bottom-2;
+  .form-container {
+    max-width: $max-1000;
+    margin: $left-right-1;
+    padding: 1em .5em;
+    background-color: $primary-digital-white;
+    box-shadow: $box-shadow;
+  }
+  p {
+    color: $primary-digital-black;
+    text-align: center;
+  }
+  .error{
+    background-color: $primary-leather;
+    color: $primary-digital-white;
+    font-size: .8em;
+    font-weight: 700;
+    padding: $spacing-05;
+    margin: $top-bottom-1-auto;
+    position: relative;
+    max-width: $max-1000;
+    width: 80%;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .form-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: $spacing-1;
+    }
+    label {
+      color: $primary-digital-black;
+      margin: .5em 1em;
+    }
+
+    input {
+      border: $border-forest;
+      padding: 0.8em;
+      margin: $left-right-1;
+      background-color: $primary-digital-white;
+
+      &:focus {
+        outline: $border-leather;
+      }
+    }
+
+    ::placeholder {
+      color: rgba($primary-digital-black, 0.5);
+      font-size: 1em;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .newsletter-signup {
+    padding: $top-bottom-4;
+
+    .form-container {
+      margin: $top-bottom-0-auto;
+      padding: $top-bottom-2;
+    }
+    form {
+      flex-direction: row;
+      justify-content: center;
+
+      .form-child {
+        margin: $spacing-0;
+      }
+      button {
+        width: 20%;
+        align-self: flex-end;
+      }
+    }
+  }
+}

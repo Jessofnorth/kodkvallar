@@ -1,0 +1,94 @@
+.event-signup {
+  width: 100%;
+  margin: $top-bottom-0-auto;
+  background-color: $primary-clay;
+  padding: $top-bottom-5;
+  .event-signup-container {
+    max-width: $max-1000;
+    margin: $top-bottom-0-auto;
+  }
+  .form-container {
+    max-width: $max-650;
+    margin: $left-right-1;
+    padding-top: $spacing-2;
+    padding-bottom: $spacing-3;
+    background-color: $primary-digital-white;
+    box-shadow: $box-shadow;
+  }
+  h2 {
+    margin: 1em 0.5em;
+  }
+  p {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: $top-bottom-0-auto;
+
+    .form-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 0.5em 1em 0.5em;
+    }
+    label {
+      color: $primary-digital-black;
+      padding-bottom: 0.8em;
+    }
+
+    input,
+    textarea {
+      border: $border-forest;
+      padding: $spacing-1;
+      background-color: $primary-digital-white;
+
+      &:focus {
+        outline: $border-leather;
+      }
+    }
+
+    .smaller-input {
+      width: 50%;
+    }
+
+    .checkbox {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-bottom: $spacing-1-5;
+      input {
+        margin: $left-right-05;
+        width: $icons-md;
+        height: $icons-md;
+        background-color: $primary-digital-white;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .event-signup {
+    .form-container {
+      max-width: $max-650;
+      form {
+        width: 80%;
+      }
+      .checkbox {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: $left-right-1;
+        padding-bottom: $spacing-1-5;
+        input {
+          margin: $left-right-05;
+          width: $icons-sm;
+          height: $icons-sm;
+        }
+      }
+    }
+  }
+}

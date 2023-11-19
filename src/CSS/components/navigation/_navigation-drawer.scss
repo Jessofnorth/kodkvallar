@@ -1,0 +1,60 @@
+//navigation drawer
+
+.navigation-drawer {
+  background-color: $primary-sand;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: open 1s ease-in 0s normal none;
+  padding-top: $spacing-3;
+
+  a {
+    color: $primary-digital-black;
+    
+    text-decoration: none;
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-05;
+  }
+  a:hover {
+    color: $primary-forest;
+  }
+
+  hr {
+    background-color: $primary-digital-lollipop;
+    width: 3em;
+    height: 0.15em;
+    border: none;
+    margin-top: $spacing-2;
+    margin-bottom: $spacing-2;
+  }
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-drawer {
+    position: absolute;
+    width: 30em;
+    height: auto;
+    right: 0;
+    top: 0;
+    padding-top: $spacing-9;
+    padding-bottom: $spacing-2;
+  }
+}
+ 

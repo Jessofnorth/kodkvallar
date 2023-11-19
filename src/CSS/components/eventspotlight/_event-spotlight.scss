@@ -1,0 +1,65 @@
+.events-spotlight-container {
+  background-color: $primary-sand;
+  padding: $top-bottom-2;
+}
+.event-spotlight-h2 {
+  text-align: center;
+  padding: $top-bottom-1-5;
+}
+.event-spotlight-main {
+  max-width: $max-1000;
+  margin: $top-bottom-0-auto;
+  padding: $top-bottom-1;
+
+  img {
+    width: 100%; 
+    height: $max-400;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $primary-forest;
+    margin: $left-right-05;
+    cursor: pointer;
+    h3{
+      color: $primary-forest;
+    }
+  }
+
+  a:visited {
+    color: $primary-forest;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .arrow-btn {
+    color: $primary-forest;
+    font-size: 2em;
+    align-self: center;
+    cursor: pointer;
+    padding-left: $spacing-1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .event-spotlight-h2 {
+    max-width: $max-1000;
+    margin: $top-bottom-0-auto;
+  }
+
+  .event-spotlight-main {
+    h3 {
+      font-size: 1.5em;
+    }
+    img {
+      height: $max-600;
+    }
+  }
+}
